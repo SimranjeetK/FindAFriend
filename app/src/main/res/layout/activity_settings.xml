@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs380.csun.findafriend.SettingsActivity"
+    android:background="#B0BEC5">
+
+    <TextView
+        android:text="Settings"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:width="300dp"
+        android:height="30dp"
+        android:textColor="#F50057"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvProfileConfig"
+
+        android:textSize="27sp" />
+    //By Mahzad
+
+    /
+
+    <Button
+        android:id="@+id/turnON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="BlueTooth ON"
+        android:layout_marginTop="63dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/turnOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="BlueTooth OFF"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/turnON"
+        android:layout_alignStart="@+id/turnON" />
+
+    //end By Mahzad
+
+    <Switch
+        android:text="Bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sBluetooth"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sBluetooth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:id="@+id/sbVolume"
+        />
+
+
+
+    <!-- By Mahzad -->
+    <!-- Capture picture button -->
+
+
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_toEndOf="@+id/relativeLayout">
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnCapturePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a Picture"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/turnON"
+        android:layout_marginBottom="60dp" />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:layout_alignParentStart="true" />
+
+        <!-- To display picture taken -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

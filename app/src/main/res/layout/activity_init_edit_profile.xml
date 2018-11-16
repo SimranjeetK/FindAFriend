@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_init_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs380.csun.findafriend.InitEditProfileActivity"
+    android:background="#B0BEC5">
+
+    <Button
+        android:text="Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/bDone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:text="Profile Configuration"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:width="300dp"
+        android:height="30dp"
+        android:textColor="#F50057"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvProfileConfig"
+
+        android:textSize="27sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#f0f8ff"
+        android:hint="Search/Create Interests"
+        android:ems="10"
+        android:id="@+id/edAddInterest"
+        android:layout_marginTop="11dp"
+
+        android:textAlignment="center"
+        android:width="280dp"
+        android:layout_below="@+id/etName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Pick at least 5"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:id="@+id/tvpickfive"
+        android:textAlignment="center"
+        android:textColor="#F50057"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/bDone"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/bAddPhoto" />
+
+    <ListView
+        android:id="@+id/checkable_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#f0f8ff"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/bAdd"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_above="@+id/tvpickfive">
+
+    </ListView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#f0f8ff"
+        android:hint="Add Name"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etName"
+        android:textAlignment="center"
+        android:layout_below="@+id/bAddPhoto"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bAdd"
+        android:width="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/edAddInterest"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/bAddPhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/round_button"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tvProfileConfig"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

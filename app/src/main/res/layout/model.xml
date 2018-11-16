@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0BEC5">
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/circleImageView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="21dp"
+        android:layout_weight="0.45"
+        android:gravity="center_horizontal"
+        android:id="@+id/nametv"
+        android:textSize="18sp"
+        android:background="#f0f8ff"/>
+
+    <TextView
+        android:text="Matched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#f0f8ff"
+        android:layout_toLeftOf="@id/nametv"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/matchedtv"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="false" />
+
+    <ImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/darker_gray"
+        android:padding="10dp"
+        android:scaleType="fitXY"></ImageView>
+
+
+
+
+
+
+
+</RelativeLayout>

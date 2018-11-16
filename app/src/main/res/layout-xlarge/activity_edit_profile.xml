@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs380.csun.findafriend.EditProfileActivity">
+
+    <TextView
+        android:text="Profile Configuration"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:width="250dp"
+        android:height="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvProfileConfig"
+
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Current Interests"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:width="120dp"
+        android:height="30dp"
+        android:id="@+id/CurrInterests"
+        android:layout_below="@+id/tvName"
+        android:textSize="14sp" />
+
+
+
+
+    <ImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvProfileConfig"
+        android:scaleType="fitXY" ></ImageView>
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvName"
+        android:width="100dp"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/bSettings"
+        android:contentDescription="Redirects to settings page" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#f0f8ff"
+        android:hint="Search/Create"
+        android:ems="10"
+        android:id="@+id/edAddInterest"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:width="100dp"
+        android:layout_above="@+id/PopInterests"
+        android:layout_below="@+id/checkable_list"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="Popular List"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:width="120dp"
+        android:height="30dp"
+        android:id="@+id/PopInterests"
+        android:layout_above="@+id/checkable_list2"
+        android:layout_below="@+id/bAdd"
+        android:textSize="14sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/checkable_list2"
+        android:layout_below="@+id/PopInterests"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bSave"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bAdd"
+        android:width="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/edAddInterest"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bSave"
+        android:layout_marginTop="3dp"
+        android:layout_alignEnd="@+id/tvName"
+        android:layout_alignStart="@+id/tvName"
+        android:layout_below="@+id/checkable_list2"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/checkable_list"
+        android:layout_below="@+id/CurrInterests"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/edAddInterest"
+        android:layout_marginTop="8dp" />
+
+    <!-- By Mahzad -->
+    <!-- Capture picture button -->
+
+
+
+
+<!--    end of the camera removed code             -->
+
+
+
+</RelativeLayout>
+
+
+
+
+

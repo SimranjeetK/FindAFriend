@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "352857589973",
+    "firebase_url": "https://find-a-friend-9e291.firebaseio.com",
+    "project_id": "find-a-friend-9e291",
+    "storage_bucket": "find-a-friend-9e291.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352857589973:android:e6883b7c858878f6",
+        "android_client_info": {
+          "package_name": "com.cs380.csun.findafriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352857589973-4b02ib3egbl6bt6fgbdlrdqh0vn5ps19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cs380.csun.findafriend",
+            "certificate_hash": "08ecfd3fbe175d17d3ac31a7a8473527a8c05172"
+          }
+        },
+        {
+          "client_id": "352857589973-sg7vtgaln1jci4anbidg5kqt940os5sm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cs380.csun.findafriend",
+            "certificate_hash": "666e3b68cc7017108519f017ee1f8f496b51414d"
+          }
+        },
+        {
+          "client_id": "352857589973-brp2dolhlt3r3151d0479s1d90maal8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLsMHdzRpKZIP7X3CUWpVDFMxEvdnXY-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352857589973-brp2dolhlt3r3151d0479s1d90maal8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

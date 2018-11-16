@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs380.csun.findafriend.EditProfileActivity"
+    android:background="#B0BEC5">
+
+    <TextView
+        android:text="My Profile"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:width="250dp"
+        android:height="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvProfileConfig"
+        android:textColor="#F50057"
+        android:textStyle="bold"
+        android:textSize="27sp" />
+
+    <TextView
+        android:text="Current Interestss"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:width="120dp"
+        android:height="15dp"
+        android:textColor="#F50057"
+        android:id="@+id/CurrInterests"
+        android:layout_below="@+id/tvName"
+        android:textSize="14sp" />
+
+
+
+
+    <ImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvProfileConfig"
+        android:scaleType="fitXY" ></ImageView>
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:id="@+id/tvName"
+        android:width="150dp"
+        android:textSize="20sp"
+        android:background="#f0f8ff"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/bSettings"
+        android:background="#f0f8ff"
+        android:contentDescription="Redirects to settings page" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#f0f8ff"
+        android:hint="Search/Create"
+        android:ems="10"
+        android:id="@+id/edAddInterest"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:width="155dp"
+
+        android:layout_below="@+id/checkable_list"
+        android:layout_centerHorizontal="false" />
+    <TextView
+        android:text="Popular List"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:width="120dp"
+        android:height="15dp"
+        android:id="@+id/PopInterests"
+        android:textColor="#F50057"
+        android:layout_below="@+id/edAddInterest"
+        android:textSize="14sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/checkable_list2"
+        android:layout_below="@+id/PopInterests"
+        android:layout_centerHorizontal="true"
+        android:background="#f0f8ff"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bSave"
+        android:width="14dp"
+        android:layout_alignTop="@+id/edAddInterest"
+        android:layout_toEndOf="@+id/bAdd"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/checkable_list"
+        android:layout_below="@+id/CurrInterests"
+        android:layout_centerHorizontal="true"
+        android:background="#f0f8ff"
+        android:layout_marginTop="6dp"
+        android:layout_height="160dp" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bAdd"
+        android:width="14dp"
+        android:layout_alignTop="@+id/edAddInterest"
+        android:layout_toEndOf="@+id/edAddInterest"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+
+
+</RelativeLayout>
+
+
+
+
+
